@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Barbecue_Budget__c</fullName>
+    <description>Relación con el presupuesto de asado asociado a esta evaluación.</description>
+    <inlineHelpText>Seleccione el presupuesto de asado que está evaluando.</inlineHelpText>
+    <label>Presupuesto Asado</label>
+    <referenceTo>Barbecue_Budget__c</referenceTo>
+    <relationshipLabel>Evaluaciones</relationshipLabel>
+    <relationshipName>Evaluaciones</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

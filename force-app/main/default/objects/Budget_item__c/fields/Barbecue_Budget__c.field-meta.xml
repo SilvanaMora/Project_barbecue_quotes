@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Barbecue_Budget__c</fullName>
+    <description>Relación Master-Detail entre Partida Presupuestaria y Presupuesto Asado.</description>
+    <inlineHelpText>Seleccione el presupuesto al que pertenece esta partida.</inlineHelpText>
+    <label>Presupuesto Asado</label>
+    <referenceTo>Barbecue_Budget__c</referenceTo>
+    <relationshipLabel>Partidas presupuestarias</relationshipLabel>
+    <relationshipName>Partidas_presupuestarias</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>
