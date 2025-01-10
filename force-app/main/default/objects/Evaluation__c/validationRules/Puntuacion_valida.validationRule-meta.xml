@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Puntuacion_valida</fullName>
+    <active>true</active>
+    <description>La puntuación debe estar entre  0 y 10.</description>
+    <errorConditionFormula>OR(Score__c &lt; 0, Score__c &gt; 10)</errorConditionFormula>
+    <errorDisplayField>Score__c</errorDisplayField>
+    <errorMessage>La puntuación debe ser un número entre 0 y 10.</errorMessage>
+</ValidationRule>

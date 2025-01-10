@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validar_CPF_Presupuesto</fullName>
+    <active>true</active>
+    <description>Regla para validar que  CPF esté lleno al solicitar un presupuesto para un asado, sino no es posible solicitarlo.</description>
+    <errorConditionFormula>ISBLANK(Customer__r.CPF__c)</errorConditionFormula>
+    <errorDisplayField>Customer__c</errorDisplayField>
+    <errorMessage>El cliente debe tener un CPF para solicitar un presupuesto para un asado.</errorMessage>
+</ValidationRule>

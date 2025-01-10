@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validar_activo_producto_servicicio</fullName>
+    <active>true</active>
+    <description>Evita que se seleccione un producto que no esté activo como partida presupuestaria.</description>
+    <errorConditionFormula>NOT(Product__r.IsActive)</errorConditionFormula>
+    <errorDisplayField>Product__c</errorDisplayField>
+    <errorMessage>El producto o servicio seleccionado no está activo y no puede ser utilizado como partida presupuestaria. Por favor selecciona uno activo.</errorMessage>
+</ValidationRule>
