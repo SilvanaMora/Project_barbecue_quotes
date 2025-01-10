@@ -1,0 +1,12 @@
+<template>
+    <template if:true={isCompleted}>
+        <lightning-card title="Evaluar Asado">
+            <div class="slds-p-horizontal_medium">
+                <lightning-input label="Puntuación" value={score} onchange={handleScoreChange} type="number" min="0" max="10"></lightning-input>
+                <lightning-textarea label="Observaciones" value={observations} onchange={handleObservationsChange}></lightning-textarea>
+                <lightning-button variant="brand" label="Guardar Evaluación" onclick={handleSave}></lightning-button>
+            </div>
+        </lightning-card>
+    </template>
+</template>
+
