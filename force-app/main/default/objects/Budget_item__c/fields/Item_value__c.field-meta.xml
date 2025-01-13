@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Item_value__c</fullName>
+    <description>El valor unitario de un artículo específico dentro de una partida presupuestaria.</description>
+    <inlineHelpText>Se utiliza para especificar el valor del artículo dentro de la partida presupuestaria, que puede ser un producto o servicio relacionado con un presupuesto para asados.</inlineHelpText>
+    <label>Valor del Articulo</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

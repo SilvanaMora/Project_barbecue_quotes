@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validar_Estado_Asado</fullName>
+    <active>true</active>
+    <description>Asegura que solo se puedan agregar nuevos productos o servicios al presupuesto de asado mientras el estado del presupuesto sea &apos;Nuevo&apos;. Una vez que el estado cambie a cualquier valor diferente de &apos;Nuevo&apos;, no se podrán agregar más ítems.</description>
+    <errorConditionFormula>ISNEW() &amp;&amp; TEXT(Barbecue_Budget__r.Status__c) &lt;&gt; &quot;Nuevo&quot;</errorConditionFormula>
+    <errorDisplayField>Barbecue_Budget__c</errorDisplayField>
+    <errorMessage>No se pueden agregar productos o servicios al Presupuesto Asado ya que no está en estado &quot;Nuevo&quot;.</errorMessage>
+</ValidationRule>

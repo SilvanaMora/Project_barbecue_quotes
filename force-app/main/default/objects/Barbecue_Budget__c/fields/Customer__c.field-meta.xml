@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Campo de relación Lookup con el objeto Contacto. Se utiliza para asociar un presupuesto de asado a un cliente específico.</description>
+    <inlineHelpText>Seleccione el cliente al que pertenece este presupuesto. Si el cliente no está definido, puede dejar este campo vacío.</inlineHelpText>
+    <label>Cliente</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Presupuesto Asados</relationshipLabel>
+    <relationshipName>Presupuesto_Asados</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

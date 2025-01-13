@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validar_fecha_finalizacion</fullName>
+    <active>true</active>
+    <description>Regla para asegurar de que el campo fin se complete antes de cambiar el estado a &quot;Completado&quot;.</description>
+    <errorConditionFormula>ISBLANK(End__c) &amp;&amp; ISPICKVAL(Status__c, &quot;Completado&quot;)</errorConditionFormula>
+    <errorDisplayField>End__c</errorDisplayField>
+    <errorMessage>Debe ingresar una fecha de finalización si el presupuesto es &quot;Completado&quot;.</errorMessage>
+</ValidationRule>
