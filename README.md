@@ -68,8 +68,7 @@ El proyecto Presupuesto de Asados es una solución desarrollada en Salesforce pa
 - **Usuario de Prueba:** 
   - Apellido: Formación.
   - Correo: education@everymind.com.br.
-  - Nombre de usuario: [nombre].[apellido]@bestminds.com.bm2022-01.
-
+  - Nombre de usuario:  silvana.mora@everymind.uol.bm1cop 
 ## Configuración del Proyecto
 
 1. **Requisitos Previos:** Acceso a una organización Salesforce y permisos de administrador.
